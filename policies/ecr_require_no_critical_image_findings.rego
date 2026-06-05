@@ -22,7 +22,7 @@ title := "Container image must have zero CRITICAL severity findings"
 description := "Images with unresolved CRITICAL findings must not be promoted to production. A non-zero CRITICAL count indicates a vulnerability that poses an immediate exploitation risk."
 
 risk_templates := [{
-	"name":            "critical_vulnerabilities_found",
+	"name":            "ECR container image has unresolved CRITICAL vulnerabilities",
 	"title":           "Container image has unresolved CRITICAL vulnerabilities",
 	"statement":       "CRITICAL severity findings indicate immediately exploitable vulnerabilities in the image. Deploying this image exposes workloads to active exploitation and must be blocked until all CRITICAL findings are resolved.",
 	"likelihood_hint": "critical",

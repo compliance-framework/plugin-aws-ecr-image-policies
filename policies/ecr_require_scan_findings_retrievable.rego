@@ -18,7 +18,7 @@ title := "Container image scan findings must be retrievable with severity data"
 description := "Scanned images must have returned severity-classified findings records. This proves the malware-event record retention requirement is met and that the scanning capability produces auditable output."
 
 risk_templates := [{
-	"name":            "scan_findings_not_retrievable",
+	"name":            "ECR container image scan findings are not retrievable",
 	"title":           "Container image scan findings are not retrievable",
 	"statement":       "Scan findings with severity classification cannot be retrieved for this image, preventing audit of its vulnerability history and breaking the evidence chain required to demonstrate continuous monitoring compliance.",
 	"likelihood_hint": "medium",

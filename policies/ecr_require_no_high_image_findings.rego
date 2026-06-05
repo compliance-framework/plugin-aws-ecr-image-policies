@@ -22,7 +22,7 @@ title := "Container image must not exceed the HIGH severity finding threshold"
 description := "Images with HIGH severity finding counts above the configured threshold must not be promoted. The threshold is configurable via max_high_finding_count in data.json (default 0)."
 
 risk_templates := [{
-	"name":            "high_vulnerabilities_exceed_threshold",
+	"name":            "ECR container image exceeds the HIGH vulnerability threshold",
 	"title":           "Container image exceeds the HIGH vulnerability threshold",
 	"statement":       "The number of HIGH severity findings exceeds the configured threshold, indicating an unacceptable level of exploitable risk that must be reduced before the image is eligible for production promotion.",
 	"likelihood_hint": "high",
