@@ -1,0 +1,6 @@
+lisa-design:
+- Callers are copied verbatim from mock-plugin-policies-1 (same as merged plugin-file-attestation-policies#4) with every shared-workflow pin at 6e7fc9c # v1.5.2; push branch is main (the repo's default branch).
+- release.yml passes opa-version "1.14.1" (the agent's OPA) and directory: policies explicitly, per W3-S2; preview.yml relies on the shared default OPA (also 1.14.1) as the mock does.
+- .release-please-manifest.json seeded at 0.1.0 = releases/latest (v0.1.0, final, ancestor of main), so no bootstrap-sha.
+- No version.txt is added by hand; release-please adds it in the first release PR (simple release type).
+- README untouched: it does not describe releasing.
